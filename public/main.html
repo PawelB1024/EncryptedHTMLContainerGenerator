@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Generator zaszyfrowanych kontenerów</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Paweł Bielecki">
+    <meta name="descryption" content="Projekt inżynierski pt. Szyfrowany kontener w dokumencie HTML">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <div id="container-info">
+        <p>Pamiętaj o jak najbardziej bezpiecznym haśle! Stosuj małe i duże litery, cyfry oraz znaki specjalne.</p>
+        <button id="generateSafePass">Wygeneruj hasło</button>
+    </div>
+    <div id="container-main">
+        <div id="container-generate">
+            <input type="text" id="password" name="password" placeholder="Wprowadź hasło"><br>
+            <button id="generate">Wygeneruj zaszyfrowany plik</button><br>
+            <textarea id="inputText" name="inputText" placeholder="Wprowadź tekst do zaszyfrowania"></textarea>
+        </div>
+        <div id="container-options">
+            <input class="check" type="checkbox" id="gdrive">
+            <label id="labelDrive">link gdrive</label>
+            <div class="container-image">
+                <img src="/img/question_mark.png" alt="question_mark">
+                <div class="image-text">Zamiast pobierać bezpośrednio plik zostanie wrzucony na google drive.
+                    Zostaniesz na niego przekierowany, możesz wysłać link osobom którym chcesz przekazać zaszyfrowaną wiadomość.
+                </div>
+            </div>
+            <br>
+            <input class="check" type="checkbox" id="zip">
+            <label id="labelZip">zip z hasłem: </label> 
+            <div class="container-image">
+                <img src="/img/question_mark.png" alt="question_mark">
+                <div class="image-text">
+                    W razie jakichkolwiek problemów z oprogramowaniami antywirusowymi można użyć opcji archwizacji z prostym hasłem (obecny rok).
+                    Jeżeli żadne problemy nie występują opcja nie jest zalecana. By utworzyć archiwum z hasłem wymagany jest program 7zip(windows) lub zip(linux).
+                    Jeżeli 7zip nie jest w domyślnej lokalizacji, upewnij się o dodaniu go do zmiennej środowiskowej PATH</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let currentYear = new Date().getFullYear();
+        document.getElementById("labelZip").textContent += currentYear;
+    </script>
+    <script src="/scripts/script.js"></script> 
+</body>
+</html>
