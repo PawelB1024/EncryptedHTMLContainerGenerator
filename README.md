@@ -15,5 +15,5 @@ The application runs on a Node.js server and allows for generating .html files w
 - Optional zip with current year password.
 
 ## Notes
-UI is in polish.
+UI is in Polish. \
 Credits to my thesis supervisor dr. hab. Jerzy Goraus.
