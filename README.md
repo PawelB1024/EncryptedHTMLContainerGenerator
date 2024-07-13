@@ -16,4 +16,10 @@ The application runs on a Node.js server and allows for generating .html files w
 
 ## Notes
 UI is in Polish. \
-Credits to my thesis supervisor dr. hab. Jerzy Goraus.
+Credits to my thesis supervisor dr. hab. Jerzy Goraus. \
+
+## Previews
+### Generator
+![preview_generator](https://github.com/user-attachments/assets/36fa87fb-bd72-4747-a198-5b0fa5b6a1c6)
+### Container
+![preview_container](https://github.com/user-attachments/assets/23030368-20fc-40c1-831c-9f0346f8992d)
